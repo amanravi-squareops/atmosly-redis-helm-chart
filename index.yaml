@@ -15,7 +15,47 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-09-18T16:43:40.310278257+05:30"
+    created: "2026-01-28T13:36:07.903413543Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: e4e8748f535257c92af210896dcf1d951f35a4d4446b93ce3c8af059d778a66b
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://atmosly-builder.github.io/atmosly-redis-helm-chart/redis-18.12.1.tgz
+    urls:
+    - https://atmosly-builder.github.io/atmosly-redis-helm-chart/redis-18.12.6.tgz
+    version: 18.12.6
+  - annotations:
+      category: Database
+      images: |
+        - name: os-shell
+          image: docker.io/bitnamilegacy/os-shell:11-debian-11-r96
+        - name: redis-exporter
+          image: docker.io/bitnamilegacy/redis-exporter:1.57.0-debian-11-r2
+        - name: redis-sentinel
+          image: docker.io/bitnamilegacy/redis-sentinel:7.2.4-debian-11-r6
+        - name: redis
+          image: docker.io/bitnamilegacy/redis:7.2.4-debian-11-r5
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.2.4
+    created: "2026-01-28T13:36:07.900488908Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -55,7 +95,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-09-18T16:43:40.293474558+05:30"
+    created: "2026-01-28T13:36:07.896680469Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -95,7 +135,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-09-18T16:43:40.277155976+05:30"
+    created: "2026-01-28T13:36:07.893706548Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -135,7 +175,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-09-18T16:43:40.260288115+05:30"
+    created: "2026-01-28T13:36:07.889669617Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -175,7 +215,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-09-18T16:43:40.226916515+05:30"
+    created: "2026-01-28T13:36:07.884459631Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -201,4 +241,4 @@ entries:
     urls:
     - https://atmosly-builder.github.io/atmosly-redis-helm-chart/redis-18.12.1.tgz
     version: 18.12.1
-generated: "2025-09-18T16:43:40.193465121+05:30"
+generated: "2026-01-28T13:36:07.878795888Z"
